@@ -1,6 +1,10 @@
 const { Client, GatewayIntentBits, Events } = require('discord.js');
 const express = require('express');
 const cors = require('cors');
+// Thay vì để '*', ông nên để link Netlify của ông vào đây để bảo mật
+app.use(cors({
+    origin: 'https://curious-lebkuchen-c65a0a.netlify.app' 
+}));
 const mongoose = require('mongoose');
 
 // 1. CẤU HÌNH CƠ BẢN
